@@ -24,6 +24,9 @@
 ✅ O projeto Spring Boot + MVC + Thymeleaf + H2 permite:
 
 📜 Listar livros
+
 ➕ Adicionar novos livros
+
 ❌ Excluir livros
+
 🛢️ Usar um banco de dados H2
