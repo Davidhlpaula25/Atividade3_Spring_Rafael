@@ -1,19 +1,29 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+    <html lang="pt">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Livro</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-    <h1>Adicionar Livro</h1>
-    <form th:action="@{/livros/salvar}" th:object="${livro}" method="post">
-        <label>Título:</label>
-        <input type="text" th:field="*{titulo}" required />
-        <label>Autor:</label>
-        <input type="text" th:field="*{autor}" required />
-        <label>Ano de Publicação:</label>
-        <input type="number" th:field="*{anoPublicacao}" required />
-        <button type="submit">Salvar</button>
-    </form>
-    <a href="/livros">Voltar</a>
+    <div class="container">
+        <h1>Adicionar Livro</h1>
+        <form th:action="@{/livros/salvar}" th:object="${livro}" method="post">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" th:field="*{titulo}" required />
+            
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" th:field="*{autor}" required />
+            
+            <label for="anoPublicacao">Ano de Publicação:</label>
+            <input type="number" id="anoPublicacao" th:field="*{anoPublicacao}" required />
+            
+            <button type="submit">Salvar</button>
+        </form>
+        <a class="btn" href="/livros">Voltar</a>
+    </div>
 </body>
 </html>

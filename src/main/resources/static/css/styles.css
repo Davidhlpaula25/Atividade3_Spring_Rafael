@@ -1,0 +1,112 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+h1 {
+    color: #333;
+    margin-block-start: 20px;
+}
+
+/* Container principal */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    inline-size: 90%;
+    max-inline-size: 600px;
+    text-align: center;
+}
+
+/* Lista de livros */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: start;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Container de botões para alinhamento */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os botões horizontalmente */
+    margin-block-start: 15px;
+}
+
+/* Botões */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    margin-inline-end: 10px; /* Adiciona espaço entre os botões */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1; /* Faz os botões terem o mesmo tamanho */
+}
+
+.btn-voltar:hover {
+    background-color: #c82333;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
