@@ -5,17 +5,29 @@
  📌 Estrutura do Código
  
 📂src/main/java/com/example/demo/
+
 ├── **DemoApplication.java
+
 ├── **model/
+
 │ ├─Livro.java
+
 ├── **repository/
+
 │LivroRepository.java
+
 ├── **controller/
+
 │ ├──LivroController.java
+
 📂 src/main/resrc/main/resources/templates/
+
 ├─lista_livros.html
+
 ├── formulario_livro.html
+
 �src/main/resources/
+
 ├── aplicativoapplication.properties(Banco H2)
 
 
