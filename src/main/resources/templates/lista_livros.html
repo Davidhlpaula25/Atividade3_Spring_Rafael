@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Livros</title>
+</head>
+<body>
+    <h1>Lista de Livros</h1>
+    <a href="/livros/novo">Adicionar Livro</a>
+    <ul>
+        <li th:each="livro : ${livros}">
+            <span th:text="${livro.titulo} + ' - ' + ${livro.autor} + ' (' + ${livro.anoPublicacao} + ')' "></span>
+            <a th:href="@{/livros/excluir/{id}(id=${livro.id})}">Excluir</a>
+        </li>
+    </ul>
+</body>
+</html>
